@@ -13,7 +13,7 @@ const HomeScreen = () => (
   <View style={styles.screenContainer}>
     <StatusBar barStyle="light-content" backgroundColor={COLORS.black} />
     <Header />
-    <ScrollView>
+    <ScrollView contentContainerStyle={styles.scrollContainer}>
       <Categories />
       <Popular />
     </ScrollView>
@@ -79,7 +79,6 @@ export default function App() {
           headerShown: false,
           tabBarIcon: ({ focused }) => {
             let iconName;
-
             switch (route.name) {
               case 'Начало':
                 iconName = require('./assets/first.png');
@@ -100,7 +99,6 @@ export default function App() {
                 iconName = require('./assets/first.png');
                 break;
             }
-
             return (
               <Image
                 source={iconName}
@@ -126,11 +124,14 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     backgroundColor: COLORS.black,
   },
+  scrollContainer: {
+    paddingBottom: 100,
+  },
   screenText: {
     color: COLORS.white,
     fontSize: 18,
     textAlign: 'center',
-    marginTop: 10
+    marginTop: 10,
   },
   icon: {
     width: 25,

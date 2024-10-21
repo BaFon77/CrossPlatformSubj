@@ -1,4 +1,3 @@
-import React from 'react';
 import { Image, Linking, TouchableHighlight, View, StyleSheet } from 'react-native';
 
 const Header = () => {

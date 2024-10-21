@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Keyboard } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTimerDuration, startTimer, pauseTimer, restartTimer, addSecondTimer } from './actions';

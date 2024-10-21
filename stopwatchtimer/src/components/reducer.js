@@ -1,4 +1,3 @@
-
 import {
   START_STOPWATCH,
   PAUSE_STOPWATCH,
